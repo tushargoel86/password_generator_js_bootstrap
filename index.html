@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.4.1/flatly/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/1467aba71a.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            background-color: black
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="card bg-info">
+                <div class="card-body">
+                    <form id="pwdGeneratorForm" class="card">
+                        <div>
+                            <div class="text-center padding">
+                                <h2>Secure Password </h2>
+                            </div>
+
+                            <div class="form-group row mt-4">
+                                <div class="col-sm-2"></div>
+
+                                <div class="form-group row">
+                                    <input type="text" class="col-sm-8" placeholder="Your Password is...." id="password"
+                                        disabled />
+                                    <input type="button" class="btn btn-info fa fa-clipboard" 
+                                        id="clipboard">
+                                    </input>
+                                </div>
+
+                            </div>
+
+                            <div class="form-group row">
+                                <div class="col-sm-1 col-md-1"></div>
+                                <div class="col-sm-5 ">
+                                    <label for="pwdLength" class=" col-form-label">Password Length </label>
+                                </div>
+                                <div class="col-sm-5">
+                                    <select class="form-control" id="pwdLength">
+                                        <option selected value="8">8</option>
+                                        <option value="9">9</option>
+                                        <option value="10">10</option>
+                                        <option value="11">11</option>
+                                        <option value="12">12</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-sm-1"></div>
+                            <label class="col-sm-5 col-form-label" for="capitalCase">Include Capitals</label>
+                            <div class="col-sm-2">
+                                <input type="checkbox" class="form-control" name="capitalCase" id="capitalCase" value=""
+                                    checked>
+                            </div>
+                            <div class="col-sm-3">
+                                <label>(ABCDEF)</label>
+                            </div>
+
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-sm-1"></div>
+                            <div class="col-sm-5">
+                                <label class="col-form-label" for="number">Include Lower Case</label>
+                            </div>
+                            <div class="col-sm-2">
+                                <input type="checkbox" class="form-control" name="lowerCase" id="lowerCase" value=""
+                                    checked>
+                            </div>
+                            <div class="col-sm-3">
+                                <label>(abcdef)</label>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-sm-1"></div>
+                            <div class="col-sm-5">
+                                <label class="col-form-label" for="number">Include Number</label>
+                            </div>
+                            <div class="col-sm-2">
+                                <input type="checkbox" class="form-control" name="number" id="number" value="number"
+                                    checked />
+                            </div>
+                            <div class="col-sm-3">
+                                <label>(123456)</label>
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <div class="col-sm-1"></div>
+                            <div class="col-sm-5">
+                                <label class="col-form-label " for="symbol">Include Symbols</label>
+                            </div>
+                            <div class="col-sm-2">
+                                <input type="checkbox" class="form-control" id="symbol" value="symbol">
+                            </div>
+                            <div class="col-sm-3">
+                                <label>({}[]()/\'"`~,;:.<>)</label>
+                            </div>
+                        </div>
+                        <div class="form-group row mt-4 justify-content-center">
+                            <button type="submit" class="btn btn-primary">Generate Password</button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+
+        </div>
+        </form>
+    </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
